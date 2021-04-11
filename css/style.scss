@@ -1,0 +1,337 @@
+/* Global */
+
+$primary-color:#5b4f41;
+$secondary-color: #91856f;
+$primary-font: 15px/1.5 Arial, Helvetica, sans-serif;
+
+
+*{
+    // Global
+    margin: 0;
+    padding: 0;
+    font: $primary-font;
+
+    body{
+        background-color: cadetblue;
+    }
+
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            list-style-type: none;
+        }
+    }
+
+    // Main content
+    #main-content{
+        margin: auto;
+        width: 70%;
+
+        // Container for all
+        .container{
+            padding: 0 10%;
+        }
+
+        // Header section
+        header{
+            margin: 0;
+            height: 300px;
+            box-sizing: border-box;
+            background-image: url("../images/banner.jpg");
+            background-size: cover;
+            background-position: center top;
+            width: 100%;
+            text-align: center;
+            padding-top: 80px;
+        
+            .hi-box {
+                position: absolute;
+                top: 0;
+                left: 25%;
+                box-sizing: border-box;
+                width: 70px;
+                height: 90px;
+                background-color: #5b4f41;
+                clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
+
+                p {
+                    color: #a7997a;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: 2em;
+                    margin-top: 30px;
+                }
+            }
+
+            .txt-md {
+                font-size: 17px;
+            }
+            
+            .txt-lg {
+                font-size: 40px;
+                font-weight: 530;
+            }
+
+            >p {
+                letter-spacing: 0.20em;
+                font-weight: 500;
+                color: #5b4f41;
+            }
+
+            .line-pro {
+                width: 530px;
+                border-bottom: 3px #5b4f41 solid;
+                margin: 3px auto;
+            }
+
+            .profession-bar {
+                background-color: #5b4f41;
+                width: 520px;
+                margin: auto;
+                box-sizing: border-box;
+                padding: 3px 15px;
+                letter-spacing: 4px;
+                border-radius: 50px;
+                clip-path: polygon(97% 0, 100% 45%, 97% 100%, 2% 100%, 0% 50%, 2% 0);
+                display: flex;
+                justify-content: space-evenly;
+
+
+                .profession-item {
+                    display: inline-block;
+                    color: white;
+                    padding: 0 5px;
+                    border-right: 2px white solid;
+                }
+                .non-bor {
+                    border: none;
+                }
+            }
+        }
+
+        //content section
+        #content{
+            display: flex;
+
+            //Infomation Details section
+            #left-content {
+                background-color: #5b4f41;
+                width: 30%; 
+                box-sizing: border-box;
+
+                div img {
+                    position: relative;
+                    width: 65%;
+                    height: auto;
+                    border-radius: 50%;
+                    top: 0;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    padding: 10px;
+                    border: #5b4f41 3px solid;
+                    box-shadow: inset 0 0 10px #5b4f41;
+                    margin-bottom: -90px;
+                }
+
+                .bottom-border {
+                    border-bottom: 3px seagreen solid;
+                    padding-bottom: 5px;
+                    padding-top: 5px;
+
+                    .line {
+                        margin: 2.5em auto;
+                    }
+                    .social-profile i {
+                        margin-top: 3px;
+                    }
+                }
+                .info-heading  {
+                    p{
+                        color: aliceblue;
+                        font-size: 1.25em;
+                    }
+                }
+                .info {
+                    display: flex;
+                    justify-content: space-between;
+                    color: #a7997a;
+                    .txt-info {
+                        color: #b8af9e;
+                    }
+                }
+                .profile {
+                    display: flex;
+                    justify-content: start;
+                    padding-right: 30px;
+                    color: #91856f;
+                    i {
+                        padding-right: 0.8em;
+                        margin-top: 3px;
+                    }
+                }
+
+                .partition {
+                    width: 7px;
+                    height: 7px;
+                    margin: auto;
+                    transform: rotate(45deg);
+                    margin-top: 30px;
+                    position: relative;
+                    border: 2px solid white;
+                    margin-bottom: 30px;
+
+                    &:before {
+                        content: "";
+                        width: 60px;
+                        height: 1px;
+                        position: absolute;
+                        top: 36px;
+                        left: -60px;
+                        background: wheat;
+                        transform: rotate(-45deg);
+                    }
+                    &:after {
+                        content: "";
+                        width: 60px;
+                        height: 1px;
+                        position: absolute;
+                        top: -34px;
+                        left: 10px;
+                        background: wheat;
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+            #right-content {
+                width: 70%;
+                background-color: #ffffff;
+                padding-bottom: 40px;
+
+                .skill-group {
+                    margin-top: 40px;
+                    margin-bottom: 10px;
+
+                    .skill-item {
+                        display: flex;
+
+                        &::before{
+                            content: "";
+                            width: 10px;
+                            height: 10px;
+                            background-color: white;
+                            border: 1px #111111 solid;
+                            transform: rotate(45deg);
+                            margin-top: 5px;
+                            margin-right: 10px;
+                        }
+                       font-size: 17px;
+                       padding-top: 5px;
+                    }
+                }
+                h3 {
+                    color: #5b4f41;
+                    font-size: 1.3em;
+                    font-weight: 550;
+                    padding-bottom: 5px;
+                    border-bottom: 3px brown solid;
+                    margin-bottom: 10px;
+                }
+                p {
+                    padding-top: 5px;
+                    font-size: 16px;
+                }
+                .softwares-skill>div {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+
+                    .sw-item-gr span {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .level {
+                            display: flex;
+                            padding-top: 10px;
+
+                            li {
+                                content: "";
+                                width: 9px;
+                                height: 9px;
+                                background-color: #111111;
+                                margin-left: 5px;
+                                transform: rotate(45deg);
+                            }
+
+                            .skill-none {
+                                background-color: cadetblue !important;
+                            }
+                        }
+                        p{
+                            padding-right: 10px;
+                        }
+                    }
+                }
+                .hobies-interests>div {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .hobies-item {
+                        text-align: center;
+
+                        i {
+                            font-size: 30px;
+                            color: $primary-color;
+                        }
+                        p{
+                            color: $primary-color;
+                        }
+                    }
+                }
+                .work-experience{
+                    .exp-item {
+                        margin: 5px 0;
+
+                        span {
+                            display: flex;
+                            border-bottom: 2px #5b4f41 solid;
+                        }
+                        span p:first-child {
+                            padding-right: 10px;
+                            border-right: 2px #5b4f41 solid;
+                            margin-right: 10px;
+                            padding-left: 20px;
+                        }
+                        .txt-weight {
+                            font-weight: 550;
+                        }
+                        .breakline {
+                            content: "";
+                            width: 12px;
+                            height: 12px;
+                            background-color: #5b4f41;
+                            transform: rotate(45deg);
+                            margin-top: -6px;
+                        }
+                        p{
+                            padding-left: 20px;
+                        }
+                        :first-child p{
+                            padding-left: 0px;
+                        }
+                    }
+                }
+            .educational-summary{
+                p{
+                    font-size: 18px;
+                }
+            }
+            }
+        }
+    }
+}
+
+
+
+
+
+// Header section
